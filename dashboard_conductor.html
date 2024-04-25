@@ -7,6 +7,38 @@
     <title>Dashboard Conductor</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #montoTotal {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,17 +47,17 @@
             <a href="#!" class="brand-logo">Dashboard Conductor</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#" id="cerrarSesion">Salida</a></li>
+                <li><a href="#">Salir</a></li>
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#" id="cerrarSesionToggle">Salida</a></li>
+        <li><a href="#">Salir</a></li>
     </ul>
 
     <div class="container">
-        <h4>Usuarios que abordaron:</h4>
-        <ul class="collection" id="usuariosAbordaron"></ul>
+        <h4>Usuarios llevados por el conductor:</h4>
+        <ul id="usuariosLlevados"></ul>
 
         <h4>Monto total de viajes realizados:</h4>
         <p id="montoTotal"></p>

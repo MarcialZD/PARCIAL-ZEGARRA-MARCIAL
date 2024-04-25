@@ -1,23 +1,13 @@
-$(document).ready(function () {
+$(document).ready(() => {
     const conductorId = localStorage.getItem("usuario_id");
     const conductor = conductores.find(c => c.id === conductorId);
 
     if (conductor) {
-        const mostrarUsuariosAbordaron = () => {
-            const usuariosAbordaronHTML = conductor.usuariosLlevados.map(usuarioId => {
-                const usuario = usuarios.find(u => u.id === usuarioId);
-                return `<li class="collection-item">${usuario.usuario}</li>`;
-            }).join("");
-            $("#usuariosAbordaron").html(usuariosAbordaronHTML);
-        };
+        conductor.usuariosLlevados.forEach(usuarioId => {
+                $("#usuariosLlevados").append(`<li>${usuarioId}</li>`);
+        });
 
-        const calcularMontoTotal = () => {
-            const montoTotal = conductor.montoTotalViajes.toFixed(2);
-            $("#montoTotal").text(`$${montoTotal}`);
-        };
-
-        mostrarUsuariosAbordaron();
-        calcularMontoTotal();
+        $("#montoTotal").text(`$${conductor.montoTotalViajes.toFixed(2)}`);
     } else {
         Swal.fire({
             icon: 'error',
