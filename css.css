@@ -1,0 +1,100 @@
+
+.btnIcon i {
+    margin-right: 10px;
+}
+.btnIcon {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.collection .collection-item.avatar .title {
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+}
+.collection .collection-item.avatar p.precio {
+    color: #2bbbad;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 5px;
+}
+#logo{
+    width: 50px;
+    margin-left: 30px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+#lista-cursos {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-cursos li {
+    margin-bottom: 10px;
+}
+
+#lista-cursos li a {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#lista-cursos li a:hover {
+    background-color: #ddd;
+}
+
+#descripcion-curso {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#descripcion-curso p {
+    margin: 0;
+}
+
+.card {
+    box-shadow: 0px 8px 20px 20px rgba(111, 183, 222, 0.3);
+}
+
+
+h4{
+    margin-top: 4px
+}
+#enc {
+    margin-top: 0; 
+    margin-bottom: 0; 
+    text-align: left;
+}
+
+.card-content {
+    padding: 0; /* Añade relleno al contenido de la tarjeta */
+}
+
+
+
+.btnWitdh {
+    width: 100%; 
+}
