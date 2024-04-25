@@ -1,6 +1,12 @@
 $(document).ready(() => {
     const usuarioId = localStorage.getItem("usuario_id");
-    const usuario = usuarios.find(u => u.id === usuarioId);
+    let usuario = null;
+
+    usuarios.forEach(u => {
+        if (u.id === usuarioId) {
+            usuario = u;
+        }
+    });
 
     if (usuario) {
         const generarHTMLViajes = (viajes) => {
@@ -35,10 +41,8 @@ $(document).ready(() => {
             icon: 'error',
             title: 'Error',
             text: 'Usuario no encontrado.'
-            
         });
         window.location.href = "index.html";
-
     }
 
     $("#cerrarSesion, #cerrarSesionToggle").click(() => {
