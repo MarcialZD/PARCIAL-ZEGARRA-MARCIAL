@@ -35,7 +35,10 @@ $(document).ready(() => {
             icon: 'error',
             title: 'Error',
             text: 'Usuario no encontrado.'
+            
         });
+        window.location.href = "index.html";
+
     }
 
     $("#cerrarSesion, #cerrarSesionToggle").click(() => {
